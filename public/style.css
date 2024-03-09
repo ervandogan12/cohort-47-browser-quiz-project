@@ -14,6 +14,9 @@ p {
   font-style: italic;
 
 }
+.welcome-content{
+  font-size: larger;
+}
 
 #username-text {
   color: rgb(243, 243, 243);
@@ -100,13 +103,14 @@ p {
   border-radius: 10px;
   background-color: #cac8c5;
   height: 3rem;
+  right: 1rem;
   box-shadow: 2px 4px 0px 0px rgba(26, 18, 6, 0.75);
 }
 
 .score-element {
   position: absolute;
   top: 0px;
-  left: 20rem;
+  right: 2rem;
   font-size: 50px !important;
   color: rgb(48, 45, 45);
   border: 3px solid(141, 73, 38);
@@ -143,6 +147,7 @@ ul {
   gap: 0.8rem;
   cursor: pointer;
   align-items: center;
+  right: 1rem;
 }
 
 li {
@@ -196,7 +201,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* #next-question-button {
+  #next-question-button {
     position: absolute;
     bottom: 10px;
     font-size: 18px !important;
@@ -207,7 +212,7 @@ h1 {
     background-color: #cac8c5;
     height: 3rem;
     box-shadow: 2px 4px 0px 0px rgba(26, 18, 6, 0.75);
-  } */
+  } 
 
   h1 {
     font-size: 14px;
@@ -219,5 +224,39 @@ h1 {
     margin-right: 10rem;
 
   }
+  body{
+    font-size: medium;
+  }
+  .welcome-content h1{
+    font-size: 1.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .welcome-content h2{
+    font-size: 1.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  #start-quiz-button {
+
+    margin-right: 15rem;
+    width:120px;
+   
+  }
+  #inputname {
+    margin-left: 15rem;
+    width:120px;
+  }
+
+  .score-element {
+    left:25rem;
+    width: max-content;
+  }
+  
+
+#next-question-button {
+ left:20rem;
+ width: max-content;
+}
 
 }
